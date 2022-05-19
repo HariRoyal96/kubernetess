@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: service
+metadata: 
+ name: springapp-svc
+spec: 
+ ports:
+  - port: 8080
+    targetPort: 80
+ type: NodePort
